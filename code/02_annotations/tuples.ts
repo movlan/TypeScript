@@ -7,6 +7,9 @@ const drink = {
   sugar: 40,
 };
 
+// Type alias
 type Drink = [string, boolean, number];
 
 const drinkTuple: Drink = ["brown", true, 40];
+
+// Tuples used rarely because it is hard to understand what values means
