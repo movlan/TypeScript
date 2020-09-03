@@ -1,3 +1,6 @@
+// This class will sort any type of collections as long as that collection has:
+// property length and methods compare and swap
+
 interface Sortable {
   length: number;
   compare(leftIndex: number, rightIndex: number): boolean;
