@@ -1,10 +1,15 @@
 import { Sorter } from "./Sorter";
 import { NumbersCollection } from "./NumbersCollection";
+import { CharacterCollection } from "./CharacterCollection";
 
 const numbersCollection = new NumbersCollection([100, 3, -5, 12, 0]);
+const characterCollection = new CharacterCollection("helloWorld");
 
-const sorter = new Sorter(numbersCollection);
+const sortNumbers = new Sorter(numbersCollection);
+const sortChars = new Sorter(characterCollection);
 
-sorter.sort();
+sortNumbers.sort();
+sortChars.sort();
 
 console.log(numbersCollection.data);
+console.log(characterCollection.data);
